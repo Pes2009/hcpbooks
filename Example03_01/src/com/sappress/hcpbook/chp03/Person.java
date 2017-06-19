@@ -1,0 +1,39 @@
+package com.sappress.hcpbook.chp03;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+/**
+ * Class holding information on a person.
+ */
+@Entity(name="PERSONS")
+public class Person {
+	@Id
+    private String id;
+    private String firstName;
+    private String lastName;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String newId) {
+        this.id = newId;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void setFirstName(String newFirstName) {
+        this.firstName = newFirstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public void setLastName(String newLastName) {
+        this.lastName = newLastName;
+    }
+}
